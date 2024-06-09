@@ -6,6 +6,6 @@ import { availableAndRentedCarsWithSpecificModel, availableCarsWithSpecificModel
 export const specialApiRouter = Router()
 
 specialApiRouter.get("/:m1/:m2", carsModelsHondaAndToyota);
-specialApiRouter.get("/:model", availableCarsWithSpecificModel);
-specialApiRouter.get("/:model", carsRentedOrSpecificModel)
-specialApiRouter.get("/model",availableAndRentedCarsWithSpecificModel)
+specialApiRouter.get("/availableCarsWithSpecificModel/:model", availableCarsWithSpecificModel);
+specialApiRouter.get("/carsRentedOrSpecificModel/:model", carsRentedOrSpecificModel)
+specialApiRouter.get("/availableAndRentedCarsWithSpecificModel/:model",availableAndRentedCarsWithSpecificModel)
